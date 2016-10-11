@@ -29,7 +29,32 @@
 		3CB93A6B1D439B1000623F09 /* scuffed-plastic-metal.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CB93A551D439B1000623F09 /* scuffed-plastic-metal.png */; };
 		3CB93A6C1D439B1000623F09 /* scuffed-plastic-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CB93A561D439B1000623F09 /* scuffed-plastic-normal.png */; };
 		3CB93A6D1D439B1000623F09 /* scuffed-plastic-roughness.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CB93A571D439B1000623F09 /* scuffed-plastic-roughness.png */; };
-		3CB93A6E1D439B1000623F09 /* sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3CB93A591D439B1000623F09 /* sphere.obj */; };
+		C50310B51DA37D6C00B685F9 /* M_04___Default1.PNG in Resources */ = {isa = PBXBuildFile; fileRef = C50310B41DA37D6C00B685F9 /* M_04___Default1.PNG */; };
+		C50310BB1DA37F8D00B685F9 /* IronMan.obj in Resources */ = {isa = PBXBuildFile; fileRef = C50310BA1DA37F8D00B685F9 /* IronMan.obj */; };
+		C50310C11DA387B400B685F9 /* Mark 42 Helm.obj in Resources */ = {isa = PBXBuildFile; fileRef = C50310C01DA387B400B685F9 /* Mark 42 Helm.obj */; };
+		C50310C31DA3995B00B685F9 /* IMG_0012.JPG in Resources */ = {isa = PBXBuildFile; fileRef = C50310C21DA3995B00B685F9 /* IMG_0012.JPG */; };
+		C5076E581DA4BC44006E34CD /* LF6N_1_42TRT_F6LS73.ies in Resources */ = {isa = PBXBuildFile; fileRef = C5076E571DA4BC44006E34CD /* LF6N_1_42TRT_F6LS73.ies */; };
+		C57A06D41DA26DEB002CA312 /* IMG_0008.JPG in Resources */ = {isa = PBXBuildFile; fileRef = C57A06D31DA26DEB002CA312 /* IMG_0008.JPG */; };
+		C57A06D61DA27289002CA312 /* IMG_0009.JPG in Resources */ = {isa = PBXBuildFile; fileRef = C57A06D51DA27289002CA312 /* IMG_0009.JPG */; };
+		C59B40A41DA254A3003EBFB4 /* sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = C59B40A31DA254A3003EBFB4 /* sphere.obj */; };
+		C59B40AC1DA254DF003EBFB4 /* harshbricks-albedo.png in Resources */ = {isa = PBXBuildFile; fileRef = C59B40A61DA254DF003EBFB4 /* harshbricks-albedo.png */; };
+		C59B40AD1DA254DF003EBFB4 /* harshbricks-ao2.png in Resources */ = {isa = PBXBuildFile; fileRef = C59B40A71DA254DF003EBFB4 /* harshbricks-ao2.png */; };
+		C59B40AE1DA254DF003EBFB4 /* harshbricks-height5-16.png in Resources */ = {isa = PBXBuildFile; fileRef = C59B40A81DA254DF003EBFB4 /* harshbricks-height5-16.png */; };
+		C59B40AF1DA254DF003EBFB4 /* harshbricks-metalness.png in Resources */ = {isa = PBXBuildFile; fileRef = C59B40A91DA254DF003EBFB4 /* harshbricks-metalness.png */; };
+		C59B40B01DA254DF003EBFB4 /* harshbricks-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = C59B40AA1DA254DF003EBFB4 /* harshbricks-normal.png */; };
+		C59B40B11DA254DF003EBFB4 /* harshbricks-roughness.png in Resources */ = {isa = PBXBuildFile; fileRef = C59B40AB1DA254DF003EBFB4 /* harshbricks-roughness.png */; };
+		C59B40B31DA258B3003EBFB4 /* sphere1.scn in Resources */ = {isa = PBXBuildFile; fileRef = C59B40B21DA258B3003EBFB4 /* sphere1.scn */; };
+		C59B40B51DA25B98003EBFB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59B40B41DA25B98003EBFB4 /* ViewController.swift */; };
+		C5A734591D9ED285003A0580 /* gold-scuffed-basecolor-boosted.png in Resources */ = {isa = PBXBuildFile; fileRef = C5A734541D9ED285003A0580 /* gold-scuffed-basecolor-boosted.png */; };
+		C5A7345A1D9ED285003A0580 /* gold-scuffed-basecolor.png in Resources */ = {isa = PBXBuildFile; fileRef = C5A734551D9ED285003A0580 /* gold-scuffed-basecolor.png */; };
+		C5A7345B1D9ED285003A0580 /* gold-scuffed-metal.png in Resources */ = {isa = PBXBuildFile; fileRef = C5A734561D9ED285003A0580 /* gold-scuffed-metal.png */; };
+		C5A7345C1D9ED285003A0580 /* gold-scuffed-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = C5A734571D9ED285003A0580 /* gold-scuffed-normal.png */; };
+		C5A7345D1D9ED285003A0580 /* gold-scuffed-roughness.png in Resources */ = {isa = PBXBuildFile; fileRef = C5A734581D9ED285003A0580 /* gold-scuffed-roughness.png */; };
+		C5A734631D9EDAF5003A0580 /* greasy-metal-pan1-albedo.png in Resources */ = {isa = PBXBuildFile; fileRef = C5A7345F1D9EDAF5003A0580 /* greasy-metal-pan1-albedo.png */; };
+		C5A734641D9EDAF5003A0580 /* greasy-metal-pan1-metal.png in Resources */ = {isa = PBXBuildFile; fileRef = C5A734601D9EDAF5003A0580 /* greasy-metal-pan1-metal.png */; };
+		C5A734651D9EDAF5003A0580 /* greasy-metal-pan1-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = C5A734611D9EDAF5003A0580 /* greasy-metal-pan1-normal.png */; };
+		C5A734661D9EDAF5003A0580 /* greasy-metal-pan1-roughness.png in Resources */ = {isa = PBXBuildFile; fileRef = C5A734621D9EDAF5003A0580 /* greasy-metal-pan1-roughness.png */; };
+		C5A734681D9EDBB8003A0580 /* interior_hdri_29_20150416_1169368110.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5A734671D9EDBB8003A0580 /* interior_hdri_29_20150416_1169368110.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,7 +82,34 @@
 		3CB93A551D439B1000623F09 /* scuffed-plastic-metal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scuffed-plastic-metal.png"; sourceTree = "<group>"; };
 		3CB93A561D439B1000623F09 /* scuffed-plastic-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scuffed-plastic-normal.png"; sourceTree = "<group>"; };
 		3CB93A571D439B1000623F09 /* scuffed-plastic-roughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scuffed-plastic-roughness.png"; sourceTree = "<group>"; };
-		3CB93A591D439B1000623F09 /* sphere.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sphere.obj; sourceTree = "<group>"; };
+		C50310B41DA37D6C00B685F9 /* M_04___Default1.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "M_04___Default1.PNG"; sourceTree = "<group>"; };
+		C50310BA1DA37F8D00B685F9 /* IronMan.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IronMan.obj; sourceTree = "<group>"; };
+		C50310BC1DA37F9A00B685F9 /* v1_0_IronManRigged.max */ = {isa = PBXFileReference; lastKnownFileType = file; path = v1_0_IronManRigged.max; sourceTree = "<group>"; };
+		C50310BF1DA3864100B685F9 /* YRBC.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = YRBC.scn; sourceTree = "<group>"; };
+		C50310C01DA387B400B685F9 /* Mark 42 Helm.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Mark 42 Helm.obj"; sourceTree = "<group>"; };
+		C50310C21DA3995B00B685F9 /* IMG_0012.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0012.JPG; sourceTree = "<group>"; };
+		C5076E571DA4BC44006E34CD /* LF6N_1_42TRT_F6LS73.ies */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LF6N_1_42TRT_F6LS73.ies; sourceTree = "<group>"; };
+		C57A06D31DA26DEB002CA312 /* IMG_0008.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0008.JPG; sourceTree = "<group>"; };
+		C57A06D51DA27289002CA312 /* IMG_0009.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0009.JPG; sourceTree = "<group>"; };
+		C59B40A31DA254A3003EBFB4 /* sphere.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sphere.obj; sourceTree = "<group>"; };
+		C59B40A61DA254DF003EBFB4 /* harshbricks-albedo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "harshbricks-albedo.png"; sourceTree = "<group>"; };
+		C59B40A71DA254DF003EBFB4 /* harshbricks-ao2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "harshbricks-ao2.png"; sourceTree = "<group>"; };
+		C59B40A81DA254DF003EBFB4 /* harshbricks-height5-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "harshbricks-height5-16.png"; sourceTree = "<group>"; };
+		C59B40A91DA254DF003EBFB4 /* harshbricks-metalness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "harshbricks-metalness.png"; sourceTree = "<group>"; };
+		C59B40AA1DA254DF003EBFB4 /* harshbricks-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "harshbricks-normal.png"; sourceTree = "<group>"; };
+		C59B40AB1DA254DF003EBFB4 /* harshbricks-roughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "harshbricks-roughness.png"; sourceTree = "<group>"; };
+		C59B40B21DA258B3003EBFB4 /* sphere1.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = sphere1.scn; sourceTree = "<group>"; };
+		C59B40B41DA25B98003EBFB4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C5A734541D9ED285003A0580 /* gold-scuffed-basecolor-boosted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gold-scuffed-basecolor-boosted.png"; sourceTree = "<group>"; };
+		C5A734551D9ED285003A0580 /* gold-scuffed-basecolor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gold-scuffed-basecolor.png"; sourceTree = "<group>"; };
+		C5A734561D9ED285003A0580 /* gold-scuffed-metal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gold-scuffed-metal.png"; sourceTree = "<group>"; };
+		C5A734571D9ED285003A0580 /* gold-scuffed-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gold-scuffed-normal.png"; sourceTree = "<group>"; };
+		C5A734581D9ED285003A0580 /* gold-scuffed-roughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gold-scuffed-roughness.png"; sourceTree = "<group>"; };
+		C5A7345F1D9EDAF5003A0580 /* greasy-metal-pan1-albedo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "greasy-metal-pan1-albedo.png"; sourceTree = "<group>"; };
+		C5A734601D9EDAF5003A0580 /* greasy-metal-pan1-metal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "greasy-metal-pan1-metal.png"; sourceTree = "<group>"; };
+		C5A734611D9EDAF5003A0580 /* greasy-metal-pan1-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "greasy-metal-pan1-normal.png"; sourceTree = "<group>"; };
+		C5A734621D9EDAF5003A0580 /* greasy-metal-pan1-roughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "greasy-metal-pan1-roughness.png"; sourceTree = "<group>"; };
+		C5A734671D9EDBB8003A0580 /* interior_hdri_29_20150416_1169368110.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = interior_hdri_29_20150416_1169368110.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +149,7 @@
 				3CB93A321D4398F100623F09 /* Assets.xcassets */,
 				3CB93A341D4398F100623F09 /* LaunchScreen.storyboard */,
 				3CB93A371D4398F100623F09 /* Info.plist */,
+				C59B40B41DA25B98003EBFB4 /* ViewController.swift */,
 			);
 			path = PBROrbs;
 			sourceTree = "<group>";
@@ -114,7 +167,10 @@
 		3CB93A3E1D439B1000623F09 /* Environment */ = {
 			isa = PBXGroup;
 			children = (
+				C5A734671D9EDBB8003A0580 /* interior_hdri_29_20150416_1169368110.jpg */,
 				3CB93A3F1D439B1000623F09 /* spherical.jpg */,
+				C57A06D31DA26DEB002CA312 /* IMG_0008.JPG */,
+				C57A06D51DA27289002CA312 /* IMG_0009.JPG */,
 				3CB93A401D439B1000623F09 /* sphericalBlurred.png */,
 			);
 			path = Environment;
@@ -123,6 +179,9 @@
 		3CB93A411D439B1000623F09 /* Materials */ = {
 			isa = PBXGroup;
 			children = (
+				C59B40A51DA254DF003EBFB4 /* harshbricks- */,
+				C5A7345E1D9EDAF5003A0580 /* greasy-metal-pan1 */,
+				C5A734531D9ED285003A0580 /* gold-scuffed */,
 				3CB93A421D439B1000623F09 /* bamboo-wood-semigloss */,
 				3CB93A481D439B1000623F09 /* oakfloor2 */,
 				3CB93A4D1D439B1000623F09 /* rustediron-streaks */,
@@ -177,9 +236,55 @@
 		3CB93A581D439B1000623F09 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
-				3CB93A591D439B1000623F09 /* sphere.obj */,
+				C5076E571DA4BC44006E34CD /* LF6N_1_42TRT_F6LS73.ies */,
+				C50310C21DA3995B00B685F9 /* IMG_0012.JPG */,
+				C50310C01DA387B400B685F9 /* Mark 42 Helm.obj */,
+				C50310BF1DA3864100B685F9 /* YRBC.scn */,
+				C50310BC1DA37F9A00B685F9 /* v1_0_IronManRigged.max */,
+				C50310BA1DA37F8D00B685F9 /* IronMan.obj */,
+				C50310B41DA37D6C00B685F9 /* M_04___Default1.PNG */,
+				C59B40A31DA254A3003EBFB4 /* sphere.obj */,
+				C59B40B21DA258B3003EBFB4 /* sphere1.scn */,
 			);
 			path = Objects;
+			sourceTree = "<group>";
+		};
+		C59B40A51DA254DF003EBFB4 /* harshbricks- */ = {
+			isa = PBXGroup;
+			children = (
+				C59B40A61DA254DF003EBFB4 /* harshbricks-albedo.png */,
+				C59B40A71DA254DF003EBFB4 /* harshbricks-ao2.png */,
+				C59B40A81DA254DF003EBFB4 /* harshbricks-height5-16.png */,
+				C59B40A91DA254DF003EBFB4 /* harshbricks-metalness.png */,
+				C59B40AA1DA254DF003EBFB4 /* harshbricks-normal.png */,
+				C59B40AB1DA254DF003EBFB4 /* harshbricks-roughness.png */,
+			);
+			path = "harshbricks-";
+			sourceTree = "<group>";
+		};
+		C5A734531D9ED285003A0580 /* gold-scuffed */ = {
+			isa = PBXGroup;
+			children = (
+				C5A734541D9ED285003A0580 /* gold-scuffed-basecolor-boosted.png */,
+				C5A734551D9ED285003A0580 /* gold-scuffed-basecolor.png */,
+				C5A734561D9ED285003A0580 /* gold-scuffed-metal.png */,
+				C5A734571D9ED285003A0580 /* gold-scuffed-normal.png */,
+				C5A734581D9ED285003A0580 /* gold-scuffed-roughness.png */,
+			);
+			name = "gold-scuffed";
+			path = "gold-scuffed-b";
+			sourceTree = "<group>";
+		};
+		C5A7345E1D9EDAF5003A0580 /* greasy-metal-pan1 */ = {
+			isa = PBXGroup;
+			children = (
+				C5A7345F1D9EDAF5003A0580 /* greasy-metal-pan1-albedo.png */,
+				C5A734601D9EDAF5003A0580 /* greasy-metal-pan1-metal.png */,
+				C5A734611D9EDAF5003A0580 /* greasy-metal-pan1-normal.png */,
+				C5A734621D9EDAF5003A0580 /* greasy-metal-pan1-roughness.png */,
+			);
+			name = "greasy-metal-pan1";
+			path = "greasy-metal-pan1-a";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +319,7 @@
 				TargetAttributes = {
 					3CB93A251D4398F100623F09 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = TXQ4FT4L8R;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -241,26 +347,50 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5A734591D9ED285003A0580 /* gold-scuffed-basecolor-boosted.png in Resources */,
+				C5A7345B1D9ED285003A0580 /* gold-scuffed-metal.png in Resources */,
+				C59B40AE1DA254DF003EBFB4 /* harshbricks-height5-16.png in Resources */,
+				C5A734651D9EDAF5003A0580 /* greasy-metal-pan1-normal.png in Resources */,
+				C59B40A41DA254A3003EBFB4 /* sphere.obj in Resources */,
 				3CB93A361D4398F100623F09 /* LaunchScreen.storyboard in Resources */,
 				3CB93A691D439B1000623F09 /* scuffed-plastic-albedo.png in Resources */,
+				C5A734661D9EDAF5003A0580 /* greasy-metal-pan1-roughness.png in Resources */,
+				C57A06D61DA27289002CA312 /* IMG_0009.JPG in Resources */,
 				3CB93A5B1D439B1000623F09 /* sphericalBlurred.png in Resources */,
 				3CB93A651D439B1000623F09 /* rustediron-streaks-albedo.png in Resources */,
 				3CB93A5C1D439B1000623F09 /* bamboo-wood-semigloss-albedo.png in Resources */,
 				3CB93A671D439B1000623F09 /* rustediron-streaks-normal.png in Resources */,
+				C5A7345C1D9ED285003A0580 /* gold-scuffed-normal.png in Resources */,
+				C59B40B11DA254DF003EBFB4 /* harshbricks-roughness.png in Resources */,
 				3CB93A5E1D439B1000623F09 /* bamboo-wood-semigloss-metal.png in Resources */,
+				C57A06D41DA26DEB002CA312 /* IMG_0008.JPG in Resources */,
+				C50310C11DA387B400B685F9 /* Mark 42 Helm.obj in Resources */,
 				3CB93A6B1D439B1000623F09 /* scuffed-plastic-metal.png in Resources */,
 				3CB93A331D4398F100623F09 /* Assets.xcassets in Resources */,
 				3CB93A631D439B1000623F09 /* oakfloor2-normal.png in Resources */,
-				3CB93A6E1D439B1000623F09 /* sphere.obj in Resources */,
+				C5A734681D9EDBB8003A0580 /* interior_hdri_29_20150416_1169368110.jpg in Resources */,
+				C59B40AC1DA254DF003EBFB4 /* harshbricks-albedo.png in Resources */,
 				3CB93A681D439B1000623F09 /* rustediron-streaks-roughness.png in Resources */,
 				3CB93A311D4398F100623F09 /* Main.storyboard in Resources */,
+				C50310BB1DA37F8D00B685F9 /* IronMan.obj in Resources */,
 				3CB93A6C1D439B1000623F09 /* scuffed-plastic-normal.png in Resources */,
 				3CB93A661D439B1000623F09 /* rustediron-streaks-metal.png in Resources */,
+				C5A7345A1D9ED285003A0580 /* gold-scuffed-basecolor.png in Resources */,
+				C5A7345D1D9ED285003A0580 /* gold-scuffed-roughness.png in Resources */,
+				C59B40AD1DA254DF003EBFB4 /* harshbricks-ao2.png in Resources */,
+				C5076E581DA4BC44006E34CD /* LF6N_1_42TRT_F6LS73.ies in Resources */,
 				3CB93A5F1D439B1000623F09 /* bamboo-wood-semigloss-normal.png in Resources */,
+				C50310B51DA37D6C00B685F9 /* M_04___Default1.PNG in Resources */,
 				3CB93A5A1D439B1000623F09 /* spherical.jpg in Resources */,
+				C59B40AF1DA254DF003EBFB4 /* harshbricks-metalness.png in Resources */,
+				C5A734641D9EDAF5003A0580 /* greasy-metal-pan1-metal.png in Resources */,
+				C5A734631D9EDAF5003A0580 /* greasy-metal-pan1-albedo.png in Resources */,
+				C59B40B01DA254DF003EBFB4 /* harshbricks-normal.png in Resources */,
+				C59B40B31DA258B3003EBFB4 /* sphere1.scn in Resources */,
 				3CB93A611D439B1000623F09 /* oakfloor2-albedo.png in Resources */,
 				3CB93A601D439B1000623F09 /* bamboo-wood-semigloss-roughness.png in Resources */,
 				3CB93A641D439B1000623F09 /* oakfloor2-roughness.png in Resources */,
+				C50310C31DA3995B00B685F9 /* IMG_0012.JPG in Resources */,
 				3CB93A6D1D439B1000623F09 /* scuffed-plastic-roughness.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +402,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C59B40B51DA25B98003EBFB4 /* ViewController.swift in Sources */,
 				3CB93A2E1D4398F100623F09 /* GameViewController.swift in Sources */,
 				3CB93A2A1D4398F100623F09 /* AppDelegate.swift in Sources */,
 			);
@@ -392,9 +523,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TXQ4FT4L8R;
 				INFOPLIST_FILE = PBROrbs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MediumBlog.PBROrbs;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scauos.PBROrbss;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -404,9 +536,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TXQ4FT4L8R;
 				INFOPLIST_FILE = PBROrbs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MediumBlog.PBROrbs;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scauos.PBROrbss;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

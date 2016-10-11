@@ -15,7 +15,10 @@ class GameViewController: UIViewController {
     let materialPrefixes : [String] = ["bamboo-wood-semigloss",
                                        "oakfloor2",
                                        "scuffed-plastic",
-                                       "rustediron-streaks"];
+                                       "rustediron-streaks",
+                                       "gold-scuffed",
+                                       "greasy-metal-pan1",
+                                       "harshbricks"];
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,9 +26,12 @@ class GameViewController: UIViewController {
         // create a new scene
         let scene = SCNScene(named: "sphere.obj")!
         
+        
         // select the sphere node - As we know we only loaded one object
         // we select the first item on the children list
         let sphereNode = scene.rootNode.childNodes[0]
+        
+        
         
         // create and add a camera to the scene
         let cameraNode = SCNNode()
@@ -39,14 +45,32 @@ class GameViewController: UIViewController {
         
         // Declare that you intend to work in PBR shading mode
         // Note that this requires iOS 10 and up
-        material?.lightingModelName = SCNLightingModelPhysicallyBased
+        material?.lightingModel = SCNMaterial.LightingModel.physicallyBased
         
         // Setup the material maps for your object
-        let materialFilePrefix = materialPrefixes[0];
+        let materialFilePrefix = materialPrefixes[5]
         material?.diffuse.contents = UIImage(named: "\(materialFilePrefix)-albedo.png")
+        
         material?.roughness.contents = UIImage(named: "\(materialFilePrefix)-roughness.png")
         material?.metalness.contents = UIImage(named: "\(materialFilePrefix)-metal.png")
         material?.normal.contents = UIImage(named: "\(materialFilePrefix)-normal.png")
+        
+        let sphereNode2 = sphereNode.clone()
+        sphereNode2.position = SCNVector3(x: 0, y: 0, z: -20)
+        scene.rootNode.addChildNode(sphereNode2)
+        
+        
+        //add a liteNode
+        let liteNode = SCNNode()
+        liteNode.light = SCNLight()
+        
+        liteNode.light?.iesProfileURL = URL(fileReferenceLiteralResourceName: "LF6N_1_42TRT_F6LS73.ies")
+        liteNode.light?.type = .IES
+        scene.rootNode.addChildNode(liteNode)
+        
+        liteNode.position = SCNVector3(x: 10, y: 10, z: 30)
+        
+        
         
         // Setup background - This will be the beautiful blurred background
         // that assist the user understand the 3D envirnoment
@@ -54,10 +78,10 @@ class GameViewController: UIViewController {
         scene.background.contents = bg;
         
         // Setup Image Based Lighting (IBL) map
-        let env = UIImage(named: "spherical.jpg")
+        let env = UIImage(named: "interior_hdri_29_20150416_1169368110.jpg")
         scene.lightingEnvironment.contents = env
         scene.lightingEnvironment.intensity = 2.0
-        
+
 
         // retrieve the SCNView
         let scnView = self.view as! SCNView
@@ -65,7 +89,7 @@ class GameViewController: UIViewController {
         // set the scene to the view
         scnView.scene = scene
         
-        // allows the user to manipulate the camera
+        // Notallows the user to manipulate the camera
         scnView.allowsCameraControl = true
         
         
@@ -73,29 +97,26 @@ class GameViewController: UIViewController {
          * The following was not a part of my blog post but are pretty easy to understand:
          * To make the Orb cool, we'll add rotation animation to it
          */
+        sphereNode.runAction(SCNAction.repeatForever(SCNAction.rotateBy(x: 1, y: 1, z: 1, duration: 10)))
+        sphereNode2.runAction(SCNAction.repeatForever(SCNAction.rotateBy(x: 1, y: 1, z: 1, duration: 10)))
         
-        sphereNode.run(SCNAction.repeatForever(SCNAction.rotateBy(x: 1, y: 1, z: 1, duration: 10)))
     }
     
-    override func shouldAutorotate() -> Bool {
+    override var shouldAutorotate: Bool {
         return true
     }
     
-    override func prefersStatusBarHidden() -> Bool {
+    override var prefersStatusBarHidden: Bool {
         return true
     }
     
-    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
-        if UIDevice.current().userInterfaceIdiom == .phone {
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        if UIDevice.current.userInterfaceIdiom == .phone {
             return .allButUpsideDown
         } else {
             return .all
         }
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Release any cached data, images, etc that aren't in use.
-    }
 
 }
