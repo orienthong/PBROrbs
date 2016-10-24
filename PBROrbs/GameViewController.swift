@@ -11,6 +11,10 @@ import QuartzCore
 import SceneKit
 
 class GameViewController: UIViewController {
+    
+    var scnCameraNode: SCNNode!
+    var scnCamera: SCNCamera!
+    
 
     let materialPrefixes : [String] = ["bamboo-wood-semigloss",
                                        "oakfloor2",
@@ -20,26 +24,54 @@ class GameViewController: UIViewController {
                                        "greasy-metal-pan1",
                                        "harshbricks"];
     
+    
+    
+    @IBOutlet weak var scnView: SCNView!
+    @IBAction func wantsHDRButtonTapped(_ sender: UISwitch) {
+        print(scnCamera)
+        scnCamera.wantsHDR = sender.isOn
+    }
+    @IBAction func wantsExposureAdaptationTapped(_ sender: UISwitch) {
+        scnCamera.wantsExposureAdaptation = sender.isOn
+    }
+    
+    
+    @IBAction func firstSlider(_ sender: UISlider) {
+        scnCamera.exposureOffset = CGFloat(sender.value)
+    }
+    @IBAction func secondSlider(_ sender: UISlider) {
+        scnCamera.averageGray = CGFloat(sender.value)
+    }
+    
+    @IBAction func thirdSlider(_ sender: UISlider) {
+        scnCamera.whitePoint = CGFloat(sender.value)
+    }
+    
+    @IBAction func forthSlider(_ sender: UISlider) {
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // create a new scene
         let scene = SCNScene(named: "sphere.obj")!
+        print("1")
         
         
         // select the sphere node - As we know we only loaded one object
         // we select the first item on the children list
         let sphereNode = scene.rootNode.childNodes[0]
         
-        
-        
         // create and add a camera to the scene
-        let cameraNode = SCNNode()
-        cameraNode.camera = SCNCamera()
-        scene.rootNode.addChildNode(cameraNode)
+        scnCameraNode = SCNNode()
+        scnCamera = SCNCamera()
+        scnCameraNode.camera = scnCamera
+        scene.rootNode.addChildNode(scnCameraNode)
         
         // place the camera
-        cameraNode.position = SCNVector3(x: 0, y: 0, z: 15)
+        scnCameraNode.position = SCNVector3(x: 0, y: 0, z: 15)
         
         let material = sphereNode.geometry?.firstMaterial
         
@@ -58,15 +90,17 @@ class GameViewController: UIViewController {
         let sphereNode2 = sphereNode.clone()
         sphereNode2.position = SCNVector3(x: 0, y: 0, z: -20)
         scene.rootNode.addChildNode(sphereNode2)
-        
+        print("2")
         
         //add a liteNode
         let liteNode = SCNNode()
         liteNode.light = SCNLight()
         
         liteNode.light?.iesProfileURL = URL(fileReferenceLiteralResourceName: "LF6N_1_42TRT_F6LS73.ies")
+        
         liteNode.light?.type = .IES
         scene.rootNode.addChildNode(liteNode)
+        print("3")
         
         liteNode.position = SCNVector3(x: 10, y: 10, z: 30)
         
@@ -81,12 +115,8 @@ class GameViewController: UIViewController {
         let env = UIImage(named: "interior_hdri_29_20150416_1169368110.jpg")
         scene.lightingEnvironment.contents = env
         scene.lightingEnvironment.intensity = 2.0
-
-
-        // retrieve the SCNView
-        let scnView = self.view as! SCNView
+        print("4")
         
-        // set the scene to the view
         scnView.scene = scene
         
         // Notallows the user to manipulate the camera
