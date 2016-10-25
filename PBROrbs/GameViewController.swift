@@ -99,6 +99,7 @@ class GameViewController: UIViewController {
         liteNode.light?.iesProfileURL = URL(fileReferenceLiteralResourceName: "LF6N_1_42TRT_F6LS73.ies")
         
         liteNode.light?.type = .IES
+        
         scene.rootNode.addChildNode(liteNode)
         print("3")
         
@@ -113,9 +114,13 @@ class GameViewController: UIViewController {
         
         // Setup Image Based Lighting (IBL) map
         let env = UIImage(named: "interior_hdri_29_20150416_1169368110.jpg")
-        scene.lightingEnvironment.contents = env
-        scene.lightingEnvironment.intensity = 2.0
+//        scene.lightingEnvironment.contents = env
+//        scene.lightingEnvironment.intensity = 2.0
         print("4")
+        
+        SCNTransaction.begin()
+        scene.rootNode.addChildNode(addGeometrySphere())
+        SCNTransaction.commit()
         
         scnView.scene = scene
         
@@ -146,6 +151,27 @@ class GameViewController: UIViewController {
         } else {
             return .all
         }
+    }
+    
+    func addGeometrySphere() -> SCNNode {
+        let sphere = SCNSphere(radius: 3)
+        sphere.firstMaterial?.diffuse.contents = UIColor.red
+        sphere.firstMaterial?.specular.contents = UIColor.white
+        sphere.firstMaterial?.specular.intensity = 1.0
+        sphere.firstMaterial?.shininess = 0.1
+        sphere.firstMaterial?.reflective.contents = UIImage(named: "envmap.jpg")
+        sphere.firstMaterial?.fresnelExponent = 2
+
+        
+        let node = SCNNode()
+        node.geometry = sphere
+        node.position = SCNVector3(x: -12, y: 3, z: 0)
+        node.rotation = SCNVector4(x: 1, y: 0, z: 0, w: -(Float)(M_PI_4))
+        node.geometry!.firstMaterial?.lightingModel = .lambert
+        let surfaceModifier = Bundle.main.path(forResource: "sm_surf", ofType: "shader")
+        node.geometry!.shaderModifiers = [SCNShaderModifierEntryPoint.surface: surfaceModifier!]
+        
+        return node
     }
     
 

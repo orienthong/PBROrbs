@@ -35,6 +35,8 @@
 		C50310C11DA387B400B685F9 /* Mark 42 Helm.obj in Resources */ = {isa = PBXBuildFile; fileRef = C50310C01DA387B400B685F9 /* Mark 42 Helm.obj */; };
 		C50310C31DA3995B00B685F9 /* IMG_0012.JPG in Resources */ = {isa = PBXBuildFile; fileRef = C50310C21DA3995B00B685F9 /* IMG_0012.JPG */; };
 		C5076E581DA4BC44006E34CD /* LF6N_1_42TRT_F6LS73.ies in Resources */ = {isa = PBXBuildFile; fileRef = C5076E571DA4BC44006E34CD /* LF6N_1_42TRT_F6LS73.ies */; };
+		C5291D221DBEF0C300E0DEE2 /* sm_surf.shader in Resources */ = {isa = PBXBuildFile; fileRef = C5291D211DBEF0C300E0DEE2 /* sm_surf.shader */; };
+		C5291D241DBEF1FD00E0DEE2 /* envmap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5291D231DBEF1FD00E0DEE2 /* envmap.jpg */; };
 		C5309EDF1DB4942E00228238 /* plok.scnp in Resources */ = {isa = PBXBuildFile; fileRef = C5309EDE1DB4942E00228238 /* plok.scnp */; };
 		C57A06D41DA26DEB002CA312 /* IMG_0008.JPG in Resources */ = {isa = PBXBuildFile; fileRef = C57A06D31DA26DEB002CA312 /* IMG_0008.JPG */; };
 		C57A06D61DA27289002CA312 /* IMG_0009.JPG in Resources */ = {isa = PBXBuildFile; fileRef = C57A06D51DA27289002CA312 /* IMG_0009.JPG */; };
@@ -93,6 +95,8 @@
 		C50310C01DA387B400B685F9 /* Mark 42 Helm.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Mark 42 Helm.obj"; sourceTree = "<group>"; };
 		C50310C21DA3995B00B685F9 /* IMG_0012.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0012.JPG; sourceTree = "<group>"; };
 		C5076E571DA4BC44006E34CD /* LF6N_1_42TRT_F6LS73.ies */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LF6N_1_42TRT_F6LS73.ies; sourceTree = "<group>"; };
+		C5291D211DBEF0C300E0DEE2 /* sm_surf.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sm_surf.shader; sourceTree = "<group>"; };
+		C5291D231DBEF1FD00E0DEE2 /* envmap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = envmap.jpg; sourceTree = "<group>"; };
 		C5309EDE1DB4942E00228238 /* plok.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = plok.scnp; sourceTree = "<group>"; };
 		C55C45B81DB8A8B6005245AF /* hey.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = hey.scn; sourceTree = "<group>"; };
 		C57A06D31DA26DEB002CA312 /* IMG_0008.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0008.JPG; sourceTree = "<group>"; };
@@ -247,6 +251,8 @@
 		3CB93A581D439B1000623F09 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
+				C5291D231DBEF1FD00E0DEE2 /* envmap.jpg */,
+				C5291D211DBEF0C300E0DEE2 /* sm_surf.shader */,
 				C55C45B81DB8A8B6005245AF /* hey.scn */,
 				C5309EDE1DB4942E00228238 /* plok.scnp */,
 				C5076E571DA4BC44006E34CD /* LF6N_1_42TRT_F6LS73.ies */,
@@ -387,6 +393,7 @@
 				3CB93A6B1D439B1000623F09 /* scuffed-plastic-metal.png in Resources */,
 				3CB93A331D4398F100623F09 /* Assets.xcassets in Resources */,
 				3CB93A631D439B1000623F09 /* oakfloor2-normal.png in Resources */,
+				C5291D221DBEF0C300E0DEE2 /* sm_surf.shader in Resources */,
 				C5A734681D9EDBB8003A0580 /* interior_hdri_29_20150416_1169368110.jpg in Resources */,
 				C59B40AC1DA254DF003EBFB4 /* harshbricks-albedo.png in Resources */,
 				3CB93A681D439B1000623F09 /* rustediron-streaks-roughness.png in Resources */,
@@ -394,6 +401,7 @@
 				C50310BB1DA37F8D00B685F9 /* IronMan.obj in Resources */,
 				3CB93A6C1D439B1000623F09 /* scuffed-plastic-normal.png in Resources */,
 				3CB93A661D439B1000623F09 /* rustediron-streaks-metal.png in Resources */,
+				C5291D241DBEF1FD00E0DEE2 /* envmap.jpg in Resources */,
 				C5A7345A1D9ED285003A0580 /* gold-scuffed-basecolor.png in Resources */,
 				C5A7345D1D9ED285003A0580 /* gold-scuffed-roughness.png in Resources */,
 				C59B40AD1DA254DF003EBFB4 /* harshbricks-ao2.png in Resources */,
